@@ -7,6 +7,8 @@ def regular(turtle, sides):
 
 
 
+
+
 screen=Screen()
 screen.bgcolor("white")
 screen.title("shapes")
@@ -25,17 +27,29 @@ while True:
         print("this shape is a triangle")
     elif side==4:
         print("this shape is a Quadrilateral")
-        quad=int(input("How many paralel sides does the shape have"))
-        if quad<2:
+        llel=int(input("How many parallel sides does the shape have: "))
+        if llel==0:
                 print("This is a unknown parallel")
-        if quad==2:
-            print("This is a trapezoid")
-        if quad==4:
-            print("This is a square")
+        elif llel == 1:
+            print("trapezoid")
+        else:
+            llel2=(input("Are all the angles the same measure: "))
+            if llel2=="no":
+                print("This is a rhombus")
+            elif llel2=="yes":
+                print("This is a rectangle")
+                turtle.forward(100)
+                turtle.right(50)
+                turtle.right(100)
+                turtle.right(50)
+            if llel==4:
+                print("This is a square")
     elif side==5:
         print("this shape is a Pentagon")
+        regular(turtle, sides)
     elif side==6:
         print("this shape is a hexagon")
+        regular(turtle, sides)
     else:
         print("This shape is unknown")
     regular(merlaut, side)
