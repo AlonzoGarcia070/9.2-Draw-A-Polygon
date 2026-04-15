@@ -30,8 +30,18 @@ while True:
                 print("This is a unknown parallel")
         elif llel == 1:
             print("This is a trapezoid")
+            for i in range(2):
+                    merlaut.forward(100)
+                    merlaut.right(120)
+                    merlaut.forward(100)
+                    merlaut.right(60)
         elif llel==4:
                 print("This is a square")
+                for i in range(2):
+                    merlaut.forward(50)
+                    merlaut.right(90)
+                    merlaut.forward(50)
+                    merlaut.right(90)
         else:
             llel2=(input("Are all the angles the same measure: "))
             if llel2=="no":
