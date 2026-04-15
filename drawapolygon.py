@@ -31,10 +31,13 @@ while True:
         elif llel == 1:
             print("This is a trapezoid")
             for i in range(2):
+                    merlaut.forward(200)
+                    merlaut.left(120)
                     merlaut.forward(100)
-                    merlaut.right(120)
+                    merlaut.left(60)
                     merlaut.forward(100)
-                    merlaut.right(60)
+                    merlaut.left(60)
+                    merlaut.forward(100)
         elif llel==4:
                 print("This is a square")
                 for i in range(2):
@@ -46,6 +49,11 @@ while True:
             llel2=(input("Are all the angles the same measure: "))
             if llel2=="no":
                 print("This is a rhombus")
+                for i in range(2):
+                    merlaut.forward(100)
+                    merlaut.right(120)
+                    merlaut.forward(100)
+                    merlaut.right(60)
             elif llel2=="yes":
                 print("This is a rectangle")
                 # merlaut.begin_fill()
