@@ -30,14 +30,13 @@ while True:
                 print("This is a unknown parallel")
         elif llel == 1:
             print("This is a trapezoid")
-            for i in range(2):
-                    merlaut.forward(200)
-                    merlaut.left(120)
-                    merlaut.forward(100)
-                    merlaut.left(60)
-                    merlaut.forward(100)
-                    merlaut.left(60)
-                    merlaut.forward(100)
+            merlaut.forward(200)
+            merlaut.left(120)
+            merlaut.forward(100)
+            merlaut.left(60)
+            merlaut.forward(100)
+            merlaut.left(60)
+            merlaut.forward(100)
         elif llel==4:
                 print("This is a square")
                 for i in range(2):
